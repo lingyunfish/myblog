@@ -1,0 +1,4 @@
+baseURL = 'https://lingyunfish.github.io/'
+languageCode = 'en-us'
+title = 'Solu Blog'
+theme = "ananke"
