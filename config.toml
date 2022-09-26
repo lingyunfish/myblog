@@ -2,7 +2,7 @@ baseURL = "https://lingyunfish.github.io/"
 
 # theme
 # 主题
-theme = "LoveIt"
+theme = "Solu‘s Blog"
 # themes directory
 # 主题目录
 themesDir = "./themes"
@@ -22,7 +22,7 @@ languageCode = "en"
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
 # 是否包括中日韩文字
-hasCJKLanguage = false
+hasCJKLanguage = true
 
 # default amount of posts in each pages
 # 默认每页列表显示的文章数目
@@ -267,7 +267,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = ""
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      subtitle = "苟日新 日日新 又日新"
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = true
