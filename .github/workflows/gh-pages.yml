@@ -3,14 +3,15 @@ name: github pages
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
+      - main  # Set a branch to deploy
   pull_request:
 
 jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -28,6 +29,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           PERSONAL_TOKEN : ${{ secrets.PERSONAL_TOKEN }}
-          PUBLISH_BRANCH : master
+          EXTERNAL_REPOSITORY: lingyunfish/lingyunfish.github.io
+          PUBLISH_BRANCH : cf-pages
           PUBLISH_DIR: ./public
 
